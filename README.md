@@ -1,1 +1,1 @@
-https://github.com/BraianTucker1983/desafio-maquetado.git
+https://braiantucker1983.github.io/desafio-maquetado/
