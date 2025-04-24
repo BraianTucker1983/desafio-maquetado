@@ -1,0 +1,507 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     
+    font-family: "Open Sans";
+}
+
+/*FONDO DE PUNTITOS*/
+
+.contenedor__background,
+.footer{
+    background-image: url("puntitos.png");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.header{
+    background-position: -15px 10px;
+}
+
+/*TERMINA FONDO DE PUNTITOS*/
+
+/*EMPIEZA EL HEADER*/
+
+.header{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 80px;
+}
+
+.header__logo{
+    display: flex;
+    width: 54px;
+    height: 50px;
+}
+
+.header__burger{
+    width: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  @media (min-width: 769px) {
+    .header__burger{
+        display: none;
+    }
+  }
+
+  .header__burger-lines {
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+  }
+
+.header__menu{
+    
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin-right: 70px;
+    
+}
+
+@media (min-width: 769px) {
+    .header__menu{
+        display: flex;
+        font-family: "Open Sans";
+        font-size: 16px;
+    }
+}
+
+/*TERMINA EL HEADER*/
+
+/*EMPIEZA EL MENU*/
+
+.wellcome{    
+    width: 318px;
+    height: 516px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;    
+}
+
+@media (min-width: 769px) {
+    .wellcome{
+        width: 100%;
+        height: 516px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        
+        
+    }
+}
+
+.wellcome__title{
+    margin-top: 40px;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: center;
+    max-width: 318px;
+}
+
+.wellcome__image{
+    width: 318px;
+    height: 300px;
+}
+
+@media (min-width: 769px) {
+    .wellcome__image{
+        width: 435px;
+        height: 395px;
+        align-items: end;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.contenedor-imagen-wellcome{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@media (min-width: 769px) {
+    .contenedor-imagen-wellcome{
+        justify-content: right;
+        height: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+/*TERMINA EL MENU*/
+
+/*EMPIEZA PRESENTACION*/
+
+.soy-braian{
+    margin-top: 0;
+    background-color: black;
+    height: 538px;
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    .soy-braian{
+        padding: 140px 60px;
+        justify-content: center;
+        align-items: center;  
+    }
+}
+
+.contenedor__soy-braian{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;    
+}
+
+@media (min-width: 769px) {
+    .contenedor__soy-braian{
+        flex-direction:row-reverse;
+        justify-content: center;
+        max-width: 800px;
+        margin: 0 auto;      
+    }
+}
+
+.title__soy-braian{
+    margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+    .title__soy-braian{
+        text-align: left;
+    }
+}
+
+.texto__soy-braian{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 60px 50px;
+    max-width: 532px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.soy-braian__check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 30px auto;
+}
+
+@media (min-width: 769px) {
+    .soy-braian__check{
+        width: 211px;
+        height: 211px;
+        flex-direction: row;
+        justify-content: start;
+    }
+}
+
+/*TERMINA PRESENTACION*/
+
+/*EMPIEZA MIS SERVICIOS*/
+
+.mis-servicios{
+    background-color: white;
+    height: 1375px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 769px) {
+    .mis-servicios{
+        height: 616px;        
+    }
+}
+
+.contenedor-mis-servicios{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; 
+    margin: 0 auto;   
+}
+
+@media (min-width: 769px) {
+    .contenedor-mis-servicios{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px 50px;
+    }
+}
+
+.mis-sevicios__title{
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans";
+    font-size: 32px;
+    letter-spacing: -1px;
+    margin-top: 40px;
+}
+
+.hago-cosas,
+.y-mas-cosas,
+.y-tambien-otras-cosas{
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 271px;
+    height: 312px;
+    margin: 50px 20px;
+}
+
+.mis-servicios__check{
+    width: 138px;
+    height: 128px;
+}
+
+/*TERMINA MIS SERVICIOS*/
+
+/*EMPIEZA ESCRIBIME*/
+
+.escribime{
+    background-color: #141414;
+    height: 660px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media (min-width: 769px) {
+    .escribime{  
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        
+    } 
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    .form{
+        margin-right: 40px;
+    }
+}
+.contenedor-title{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    width: 100%;
+    
+        
+    }
+
+@media (min-width: 769px) {
+    .contenedor-title{ 
+        display: flex;
+        text-align: right;       
+        font-size: 48px;
+        margin-right: 30px;
+        height: 420px;
+        
+    }
+}
+
+.escribime__title{
+    margin: 0 auto 30px auto;
+    width: 271px;
+    height: 55px;
+}
+
+@media (min-width: 769px) {
+    .escribime__title{
+        margin-right: 120px 30px auto auto;
+        height: 100%;
+    }
+}
+
+.form{
+    gap: 20px;
+}
+.fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 335px;
+    margin: 0 auto;
+    
+}
+
+.label{
+    color: white;
+}
+
+.input-text{
+    width: 335px;
+    height: 45px;
+}
+
+.textarea{
+    width: 335px;
+    height: 130px;
+}
+
+.button-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.button{
+    background-color: rgba(255, 219, 12, 0.884);
+    width: 335px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/*TERMINA ESCRIBIME*/
+
+/*EMPIEZA FOOTER*/
+
+.footer{
+    height: 493px;
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    .footer{
+        height: 346px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+}
+
+.footer__logo{
+    display: flex; 
+    flex-direction: column;   
+    width: 100px;
+    height: 240px;
+    margin: 50px auto auto 20px;
+}
+
+@media (min-width: 769px) {
+    .footer__logo{
+        width: 112px;
+        height: 100%;        
+        justify-content: center;
+        align-items: center; 
+        margin-left: 80px;
+        margin-top: 10px;       
+    }
+}
+
+.footer__logo-img{
+    width: 77px;
+    height: 71px;
+}
+
+@media (min-width: 769px) {
+    .footer__logo-img{
+        width: 112px;
+        height: 103px;
+        
+    }
+}
+.copyright{
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 400;
+}
+
+@media (min-width: 769px) {
+    .copyright{
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    .contenedor-redes{
+        height: 173px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+        margin-right: 60px;
+    }
+}
+
+.footer__instagram,
+.footer__linkedin,
+.footer__github{
+    width: 94px;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    
+    gap: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 769px) {
+    .footer__instagram,
+    .footer__linkedin,
+    .footer__github{
+        width: 200px;
+        justify-content: start;
+        
+
+    }
+}
+
+.logos-redes{
+    width: 27px;
+    height: 27px;
+}
